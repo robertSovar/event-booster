@@ -1,2 +1,9 @@
+@import 'modern-normalize/modern-normalize';
 @import './header.css';
 @import './footer.css';
+@import './body.css';
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: rgba(33, 33, 33, 1);
+}

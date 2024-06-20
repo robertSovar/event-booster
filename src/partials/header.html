@@ -1,1 +1,50 @@
-<h1 class="header"> This is the header</h1>
+<section class="header-section">
+  <picture class="logo-section">
+    <source
+      class="logo"
+      srcset="./images/logo-d-1x.webp, ./images/logo-d-2x.webp"
+      media="(min-width: 1280px)"
+    />
+    <source
+      srcset="./images/logo-t-1x.webp, ./images/logo-t-2x.webp"
+      media="(min-width: 321px) and (max-width: 768px)"
+    />
+    <source
+      srcset="./images/logo-m-1x.webp, ./images/logo-m-2x.webp"
+      media="(max-width: 320px)"
+    />
+    <img src="./images/logo-d-1x.webp" alt="logo" />
+  </picture>
+
+  <div class="title-and-form-container">
+    <h1 class="header-title">FIND BEST EVENTS AROUND THE WORLD</h1>
+    <label>
+      <input
+        class="form-input search-field"
+        type="text"
+        placeholder="Start searching"
+      />
+      <div>
+        <svg class="search-icon" width="15" height="20">
+          <use href="/src/images/search-icon.svg"></use>
+        </svg>
+      </div>
+    </label>
+
+    <label for="country">
+      <select class="form-input" name="country" id="country">
+        <option class="form-input" value="" disabled selected>
+          Choose country
+        </option>
+        <option class="form-input" value="Country 1">Country 1</option>
+        <option class="form-input" value="Country 2">Country 2</option>
+        <option class="form-input" value="Country 3">Country 3</option>
+        <option class="form-input" value="Country 4">Country 4</option>
+        <option class="form-input" value="Country 5">Country 5</option>
+        <option class="form-input" value="Country 6">Country 6</option>
+        <option class="form-input" value="Country 7">Country 7</option>
+        <option class="form-input" value="Country 8">Country 8</option>
+      </select>
+    </label>
+  </div>
+</section>
